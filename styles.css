@@ -107,7 +107,7 @@ main {
 }
 
 .card {
-  margin: 25px;
+  margin: 25px auto;
   max-width: 600px;
 }
 
