@@ -238,3 +238,56 @@ main {
   animation: fadeIn 1s ease-in forwards;
   animation-delay: var(--delay, 0s);
 }
+/* Për të siguruar që imazhet përshtaten me madhësinë e ekranit */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Për të bërë që videot të jenë responsive */
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Për të përmirësuar paraqitjen në pajisje të vogla */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .image-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .image-container p {
+        text-align: center;
+    }
+}
