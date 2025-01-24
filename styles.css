@@ -6,7 +6,13 @@
     max-width: 100% ;
     flex-wrap: wrap;
     
+    
   }
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
   body {
     background-image: url('https://st4.depositphotos.com/3930503/25520/i/450/depositphotos_255205370-stock-photo-red-abstract-digital-wallpaper.jpg');
     background-size: cover;
