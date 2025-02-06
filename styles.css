@@ -253,23 +253,3 @@ main {
   animation-delay: var(--delay, 0s);
 }
 
-    /* Ensure the text is centered and doesn't overlap with cards */
-.centered-text {
-    text-align: center;
-    margin-bottom: 2rem; /* Add space below the text */
-}
-
-/* Ensure cards have equal height and proper spacing */
-.card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.card-body {
-    flex: 1; /* Make card body take up remaining space */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Align content properly */
-}
-
