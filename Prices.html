@@ -14,7 +14,6 @@
             justify-content: center;
         }
         .ah-card {
-           
             margin: 10px;
         }
     </style>
@@ -55,9 +54,8 @@
             <button class="btn btn-primary mt-3" onclick="checkAffordableCars()">Check Affordable Cars</button>
         </div>
 
-        <div id="affordableCars" class="card-list"></div>
+        <div id="affordableCars" class="row"></div>
     </main>
-
 
     <script>
         // Car data with their prices
@@ -165,13 +163,15 @@
             } else {
                 affordableCars.forEach(car => {
                     const carCard = document.createElement("div");
-                    carCard.classList.add("card");
+                    carCard.classList.add("col-md-4", "col-sm-6", "mb-4");
                     carCard.innerHTML = `
-                        <img src="${car.img}" class="card-img-top" alt="${car.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${car.name}</h5>
-                            <p class="card-text">Price: $${car.price.toLocaleString()}</p>
-                            <a href="${car.url}" class="btn btn-primary" target="_blank">Learn More</a>
+                        <div class="card h-100">
+                            <img src="${car.img}" class="card-img-top" alt="${car.name}">
+                            <div class="card-body">
+                                <h5 class="card-title">${car.name}</h5>
+                                <p class="card-text">Price: €${car.price.toLocaleString()}</p>
+                                <a href="${car.url}" class="btn btn-primary" target="_blank">Learn More</a>
+                            </div>
                         </div>
                     `;
                     affordableCarsContainer.appendChild(carCard);
